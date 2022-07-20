@@ -1,0 +1,40 @@
+nav {
+    background: rgba(15, 15, 15, .85);
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    /*padding: 0px 50px 0px 100px;*/
+    padding: 0 50px;
+    transition: .6s ease;
+}
+
+nav .logo {
+    font-size: 1.4em;
+    font-weight: 300;
+    color: #bedfbe;
+}
+
+.nav-links {
+    /* mesmo que nav-links*/
+    display: flex;
+    flex-wrap: wrap;
+    /* não sei oq mudou*/
+}
+
+.nav-links li {
+    /* mesmo que .nav-links li*/
+    list-style: none;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.item-menu{
+    color: #fff;
+    text-decoration: none;
+}
