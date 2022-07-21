@@ -34,7 +34,116 @@ nav .logo {
     text-decoration: none;
 }
 
-.item-menu{
+.item-menu {
     color: #fff;
     text-decoration: none;
 }
+
+/* Botão Hamburger */
+
+.menu-btn {
+    display: none;
+    align-items: center;
+    color: #AEE637;
+}
+
+.menu-btn .icon {
+    position: relative;
+    height: 65px;
+    width: 65px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 0 8px;
+    transition: all 0.3s ease;
+}
+
+.menu-btn .icon.active {
+    background: rgba(17, 17, 17, 0);
+}
+
+.mrnu-btn .icon.line.active {
+    background: #bedfbe;
+}
+
+.icon i {
+    position: absolute;
+    font-size: 30px;
+    left: 50%;
+    top: 50%;
+    color: #AEE637;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.icon.active i {
+    color: #bedfbe;
+}
+
+.icon.line.active i {
+    color: #333;
+}
+
+.icon i.close {
+    opacity: 0;
+}
+
+.icon.active i.close {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.icon.active i.open {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.icon.line.active i.close {
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.icon.line.active i.open {
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+/* --------------------------- RESPONSIVIDADE -------------------------------- */
+
+@media (max-width: 1015px) {
+
+    /* Corpo da Página */
+    body {
+      overflow-x: hidden;
+    }
+  
+    /* Navbar */
+    nav .menu-btn {
+      display: block;
+    }
+  
+    .nav-links {
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background: rgba(15, 15, 15, 0.932);
+      height: 72vh;
+      width: 50vw;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+      padding: 3rem;
+      border-left: 4px solid #AEE637;
+      border-bottom: 4px solid #AEE637;
+    }
+  
+    .nav-links li a:hover,
+    .nav-links li a.active {
+      color: #AEE637;
+      background: none;
+    }
+  
+    .nav-links.active {
+      transform: translateX(0);
+    }
+}  

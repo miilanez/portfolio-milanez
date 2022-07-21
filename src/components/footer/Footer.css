@@ -1,0 +1,62 @@
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 2rem;
+}
+
+.footer-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 50px;
+}
+
+.about {
+    padding: 2rem;
+    align-items: center;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 2.2em;
+    font-weight: 600;
+    background: linear-gradient(to top, transparent 0%, #aee637 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: .8;
+}
+
+.about h3 {
+    font-size: 1em;
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 0.39em;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.follow {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.copyright p {
+    font-size: 1em;
+    font-weight: 300;
+}
